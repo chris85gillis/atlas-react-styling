@@ -6,7 +6,7 @@ const CoverArt = () => {
       <img
         src="/src/assets/placeholder.svg"
         alt="Cover Art"
-        className="w-64 h-64 object-cover rounded-lg shadow-lg"
+        className="w-84 h-84 object-cover rounded-lg shadow-lg"
       />
     </div>
   );
