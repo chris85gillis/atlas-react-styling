@@ -5,7 +5,7 @@ const VolumeControl = () => {
   return (
     <div className="flex items-center space-x-3 mt-4">
       {/* Volume Icon */}
-      <FaVolumeUp className="text-black text-lg" />
+      <FaVolumeUp className="text-nightText text-lg" />
 
       {/* Volume Slider */}
       <input
@@ -16,7 +16,7 @@ const VolumeControl = () => {
         style={{
           WebkitAppearance: 'none',
           appearance: 'none',
-          background: `linear-gradient(to right, #6A8EAE 0%, #6A8EAE var(--value, 50%), #E5E7EB var(--value, 50%), #E5E7EB 100%)`,
+          background: `linear-gradient(to right, #BB86FC 0%, #BB86FC var(--value, 50%), #E5E7EB var(--value, 50%), #E5E7EB 100%)`,
           outline: 'none',
         }}
         onInput={(e) => {
@@ -29,9 +29,9 @@ const VolumeControl = () => {
           appearance: none;
           width: 16px;
           height: 16px;
-          background-color: #6A8EAE;
+          background-color: #BB86FC;
           border-radius: 50%;
-          border: 2px solid #6A8EAE;
+          border: 2px solid #BB86FC;
           cursor: pointer;
         }
 

@@ -3,30 +3,19 @@ import { FaBackward, FaForward, FaPlay, FaRandom } from 'react-icons/fa';
 
 const PlayControls = () => {
   return (
-    <div className="flex justify-center items-center space-x-6 mt-4">
-      {/* Speed Button */}
-      <button className="text-gray-800 hover:text-black text-lg font-medium">
-        1x
+    <div className="flex justify-center space-x-4 mt-4">
+      <button className="text-nightText hover:text-nightSecondary focus:outline-none">1x</button>
+      <button className="text-nightText hover:text-nightSecondary focus:outline-none">
+        <FaBackward />
       </button>
-
-      {/* Back Button */}
-      <button className="text-gray-600 hover:text-black">
-        <FaBackward className="text-xl" />
+      <button className="bg-nightAccent text-nightPrimary p-2 rounded-lg hover:bg-nightSecondary focus:outline-none">
+        <FaPlay />
       </button>
-
-      {/* Play Button */}
-      <button className="text-black p-2 border-2 border-gray-800 rounded-md">
-        <FaPlay className="text-xl" />
+      <button className="text-nightText hover:text-nightSecondary focus:outline-none">
+        <FaForward />
       </button>
-
-      {/* Forward Button */}
-      <button className="text-gray-600 hover:text-black">
-        <FaForward className="text-xl" />
-      </button>
-
-      {/* Shuffle Button */}
-      <button className="text-gray-800 hover:text-black">
-        <FaRandom className="text-xl" />
+      <button className="text-nightText hover:text-nightSecondary focus:outline-none">
+        <FaRandom />
       </button>
     </div>
   );
